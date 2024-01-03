@@ -2,78 +2,92 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" conten="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>CV dengan Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <style>
-        body {
-          
-        }
-        h1{
-            color:darkgoldenrod
-        }
-        .center {text-align: center;
-
-        }
+      /* Custom CSS */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background-color: #ffbb00;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+      }
+      .header h1,
+      .header h4 {
+        margin: 0;
+      }
+      .experience,
+      .education {
+        margin-top: 30px;
+      }
+      .contact {
+        margin-top: 30px;
+      }
     </style>
   </head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>Afini Rosa</h1>
+        <h4>Mahasiswi</h4>
+      </div>
+
+      <!-- Pengalaman Kerja -->
+      <div class="experience">
+        <h2>Experience</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              Job desc yang saya lakukan saat membangun brand sendiri dengan
+              mencari ide bisnis,merencanakan planing,riset
+              pasar,produksi,promosi,komunikasi dengan customer,finance.
+            </h5>
+            <p class="card-text">PT.Florechoree - 2020-Seterusnya</p>
+            <p class="card-text">
+              Saya dari kecil suka menggambar dan membuat karya dari
+              keterampilan yang saya buat saya jadikan ladang usaha (bisnis),
+              saya belajar tanggung jawab serta berkomunikasi dengan customer
+              dengan baik. .
+            </p>
+          </div>
+        </div>
+        <!-- Tambahkan pengalaman kerja lain jika diperlukan -->
+      </div>
+
+      <!-- Pendidikan -->
+      <div class="education">
+        <h2>Education</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">S.tr BSD (segera)</h5>
+            <p class="card-text">Politeknik PGRI Banten - 2022-Selesai</p>
+            <p class="card-text">
+              Saya memilih jurusan Bisnis Digital karena saya mjempunytai skil,
+              saya bisa mempelajari development, manajemen pemasaran, akutansi,
+              Management Bisnis, Mengatur Waktu tanggung Jawab akan tugas tugas
+              hingga selesai dengan baik.
+            </p>
+          </div>
+        </div>
+        <!-- Tambahkan entri pendidikan lain jika diperlukan -->
+      </div>
+
+      <!-- Kontak -->
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: afinirosa23@gmail.com</p>
+        <p>Telepon: 123-456-7890</p>
+        <p>Alamat: Jl.mawarmelati No. 123</p>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="container">
-  <div class="card mt-4">
-    <img src="logo polgri.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-tittle">Politeknik PGRI</h5>
-      <p class="card-text">Some quick example text to build on the card tittle and make up>
-        <a href="#> class="btn btn-primary">Go somwhere</a>
-      </p>div>
-<img src="logo polgri.png" height="200">
-<div class="containber
-            
-    </p>
-         </body>
-       
-        
 
-    
-
-    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
