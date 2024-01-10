@@ -2,92 +2,148 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CV dengan Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
     <link
-      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
     />
     <style>
-      /* Custom CSS */
+      /* Gaya tambahan */
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
       }
-      .header {
-        background-color: #ffbb00;
-        color: #fff;
-        padding: 40px 0;
+      .profile-background {
+        background-image: url(bacground.jpeg);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
         text-align: center;
+        color: white;
       }
-      .header h1,
-      .header h4 {
-        margin: 0;
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
       }
-      .experience,
-      .education {
-        margin-top: 30px;
+      .section-title {
+        color: #f8f7f7;
+        font-weight: bold;
+        margin-bottom: 20px;
       }
-      .contact {
-        margin-top: 30px;
+      .card {
+        background-color: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border: none;
+      }
+      .card-header {
+        background-color: #570d0d;
+        color: #fff;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <!-- Header -->
-      <div class="header">
-        <h1>Afini Rosa</h1>
-        <h4>Mahasiswi</h4>
-      </div>
-
-      <!-- Pengalaman Kerja -->
-      <div class="experience">
-        <h2>Experience</h2>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">
-              Job desc yang saya lakukan saat membangun brand sendiri dengan
-              mencari ide bisnis,merencanakan planing,riset
-              pasar,produksi,promosi,komunikasi dengan customer,finance.
-            </h5>
-            <p class="card-text">PT.Florechoree - 2020-Seterusnya</p>
-            <p class="card-text">
-              Saya dari kecil suka menggambar dan membuat karya dari
-              keterampilan yang saya buat saya jadikan ladang usaha (bisnis),
-              saya belajar tanggung jawab serta berkomunikasi dengan customer
-              dengan baik. .
-            </p>
-          </div>
+    <div class="profile-background">
+      <div class="container">
+        <div class="text-center">
+          <img
+            src="foto_aku-removebg-preview.png"
+            alt="Profil"
+            class="profile-img mb-3"
+          />
+          <h1>Afini Rosa</h1>
+          <p class="text-muted">DEsign Grafis & Marketing</p>
         </div>
-        <!-- Tambahkan pengalaman kerja lain jika diperlukan -->
-      </div>
-
-      <!-- Pendidikan -->
-      <div class="education">
-        <h2>Education</h2>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">S.tr BSD (segera)</h5>
-            <p class="card-text">Politeknik PGRI Banten - 2022-Selesai</p>
-            <p class="card-text">
-              Saya memilih jurusan Bisnis Digital karena saya mjempunytai skil,
-              saya bisa mempelajari development, manajemen pemasaran, akutansi,
-              Management Bisnis, Mengatur Waktu tanggung Jawab akan tugas tugas
-              hingga selesai dengan baik.
-            </p>
-          </div>
-        </div>
-        <!-- Tambahkan entri pendidikan lain jika diperlukan -->
-      </div>
-
-      <!-- Kontak -->
-      <div class="contact">
-        <h2>Contact</h2>
-        <p>Email: afinirosa23@gmail.com</p>
-        <p>Telepon: 123-456-7890</p>
-        <p>Alamat: Jl.mawarmelati No. 123</p>
       </div>
     </div>
 
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-header">
+              <h2 class="section-title mb-0">Contact Information</h2>
+            </div>
+            <div class="card-body">
+              <p><strong>Email:</strong> <a href="mailto:afinirosa23@gmail.com">afinirosa23@gmail.com</a></p> 
+              <p><strong>Telepon:</strong> <a href="tel:+081314694965">081314694965</a></p>
+              <p><strong>Instagram:</strong> <a href="https://www.instagram.com/afinrss">afinrss</a></p>
+              <p><strong>Blog Pribadi</strong> <a href="https://draft.blogger.com/u/1/blog/post/edit/7099351202599584980/8613349742666044988">afinirosa</a></p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="card-body">
+              <p><strong>Elementary School:</strong> SD Negri Buah Gede 2 </p>
+              <p><strong>Junior High School:</strong> SMP Negri 1 Bojonegara </p>
+              <p><strong>Senior High School:</strong> SMK Negri 3 Cilegon </p>
+              <p><strong>Uneversity:</strong> PGRI Banten Polytechnic </p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="section-title">Experience</h2>  
+            </div>
+            <div class="card-body">
+              <p><strong>Founder:</strong> florechoreee (Craft Business) </p>
+              <p><strong>Jabatan:</strong> Founder </p>
+              <p><strong>Periode:</strong> 2019 - Sekarang</p>
+            </div>
+            <div class="card-body">
+                <p><strong>Founder:</strong> Afrosdinos (hennaart) </p>
+                <p><strong>Jabatan:</strong> Founder </p>
+                <p><strong>Periode:</strong> 2017 - Sekarang</p>
+              </div>
+              <div class="card-body">
+                <p><strong>Founder:</strong> Perfoodan (food) </p>
+                <p><strong>Jabatan:</strong> Founder </p>
+                <p><strong>Periode:</strong> 2023 - Sekarang</p>
+              </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="section-title">Skills</h2>
+            </div>
+                <div class="card-body">
+                  <p><strong>Soft Skills:</strong>
+                    <p>Tanggung Jawab,Kejujuran</p>
+                    <p>Kepemimpinan</p>
+                    <p>Menganalisis</p>
+                    <p>Manajemen Waktu</p>
+                    <p>Kreativitas</p>
+                    <p>Komunikasi</p>
+                    <p>Kerja Bersama Tim</p>
+                  </p>
+                  <p><strong>Hard Skills:</strong>
+                    <p>Melukis</p>
+                    <p>Membuat Karya Kerajinan</p>
+                    <p>Manajemen Bisnis</p>
+                    <p>Desain & Marketing</p>
+                    <p>Komputer</p>
+                  </p>
+                </div>
+            </div>
+          <div>
+          <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="section-title">Portofolio</h2>  
+            </div>
+            <div class="card-body">
+            
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
